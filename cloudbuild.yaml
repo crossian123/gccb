@@ -7,3 +7,4 @@ steps:
   env: ['PROJECT_ROOT=hello']
 options:
   machineType: 'N1_HIGHCPU_32'
+timeout: 60s
