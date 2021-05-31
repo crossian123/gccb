@@ -1,5 +1,5 @@
 exports.config = {
-  // See http://brunch.io/#documentation for docs.
+  // See http://brunch.io/#documentation for 
   files: {
     javascripts: {
       joinTo: "js/app.js"
