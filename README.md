@@ -5,7 +5,7 @@ This example uses [Google Cloud Container Builder](https://cloud.google.com/cont
 
 The domain globaldomination.co is used here as an example, when you see it, you'll know you need to change something.
 
-I don't cover how to link your repository to container build, see the docs for directions.
+I don't cover how to link your repository to container build, see the docs for directions.x
 
 -Start with a stock Phoenix 1.2 application.
 
