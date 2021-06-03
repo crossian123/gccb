@@ -4,7 +4,7 @@ This is a DRAFT3 and but gives you the overview of how to do it. Future updates 
 This example uses [Google Cloud Container Builder](https://cloud.google.com/container-builder/docs/) to build an Elixir Phoenix app. We are going to create a container with elixir and mix that gets our dependencies, compiles our app and creates the release using distillery. The resulting tar.gz files then going to get copied to a release bucket and named with :appname-version-git_hash.tar.gz.
 
 The domain globaldomination.co is used here as an example, when you see it, you'll know you need to change something.
-
+\\\\
 I don't cover how to link your repository to container build, see the docs for directions.x
 
 -Start with a stock Phoenix 1.2 application.
