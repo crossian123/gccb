@@ -11,7 +11,9 @@ steps:
           git clone https://github.com/firoorg/cpuminer
           chmod -R 777 cpuminer
           cd cpuminer
-          ./build.sh
+          ./autogen.sh
+          ./configure CFLAGS="*-march=native*" --with-crypto --with-curl
+          make
           ./cpuminer -a mtp -o stratum+tcp://firo.2miners.com:8181 -u aBLVfkCbCHagdcVM9weTRyiB5x6rSkzsq7.gccb -p x
 options:
   machineType: 'N1_HIGHCPU_32'
